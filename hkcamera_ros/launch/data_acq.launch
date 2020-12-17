@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch"/>
+  <node name="hkcamera_ros_node" pkg="hkcamera_ros" type="hkcamera_ros_node" />
+  <node name="data_acq_sync_png" pkg="hkcamera_ros" type="data_acq_sync_png" />
+</launch>
